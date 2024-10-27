@@ -1,0 +1,79 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #222;
+    color: #fff;
+    font-family: Arial, sans-serif;
+}
+
+.game-area {
+    position: relative;
+    width: 500px;
+    height: 500px;
+    background-color: #333;
+    border: 2px solid #fff;
+    overflow: hidden;
+}
+
+.character, .item {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+}
+
+#player {
+    background-color: #4CAF50;
+}
+
+#enemy {
+    background-color: #F44336;
+}
+
+#key {
+    background-color: #FFD700; /* Color de la llave */
+    display: none;
+}
+
+#door {
+    background-color: #1E90FF; /* Color de la puerta */
+    display: none;
+}
+
+#levelCounter {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 20px;
+    border-radius: 10px;
+    color: #fff;
+    font-size: 24px;
+    display: none;
+}
+
+.overlay button {
+    margin-top: 10px;
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+}

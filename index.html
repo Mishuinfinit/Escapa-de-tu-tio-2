@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Escapa de mi Tío - Niveles Infinitos</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="game-area">
+        <div id="player" class="character"></div>
+        <div id="enemy" class="character"></div>
+        <div id="key" class="item"></div>
+        <div id="door" class="item"></div>
+        <div id="levelCounter">Nivel: 1</div>
+        <div id="gameOver" class="overlay">
+            Game Over
+            <button onclick="revive()">Revivir</button>
+        </div>
+        <div id="nextLevel" class="overlay">
+            ¡Escapaste! <button onclick="startNextLevel()">Siguiente Nivel</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
+
